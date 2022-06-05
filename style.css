@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0e0000;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #ff0000;
+    margin: 3px 0;
+    border-radius: 50vw;
+    box-shadow: 0 0 .5rem #ff0000;
+    /* transition: 200ms ease-in-out transform,
+                200ms ease-in-out opacity; */
+    transition: 200ms ease-in-out transform,
+                200ms ease-in-out width;
+}
+
+/* .x .line1 {
+    transform: translateY(5px) rotate(-45deg);
+}
+.x .line2 {
+    transform: translateX(100%);
+    opacity: 0;
+}
+.x .line3 {
+    transform: translateY(-5px) rotate(45deg);
+} */
+
+.x .line1 {
+    width: 15px;
+    transform: rotate(-45deg) translate(-1px, -1px);
+}
+.x .line2 {
+    width: 25px;
+}
+.x .line3 {
+    width: 15px;
+    transform: rotate(45deg) translate(-1px, 1px);
+}
